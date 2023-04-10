@@ -45,7 +45,6 @@ nav{
       
 }
 
-
 li {
     display: inline;
     padding: 8px;
@@ -70,15 +69,6 @@ li {
     background-color:   rgba(66, 157, 182, 0.066);
     
   }
-
-
-
-
-  
-
-
-
-
 
 /*hero styling */ 
 
@@ -115,14 +105,48 @@ h1 {
 
     font-family: Arial, Helvetica, sans-serif;
 }
+/*My Work Styling */
+.myWork{
+    border: 3px solid seagreen;
+   
+   
+}
 
 
 
+
+
+/*My skills Styling */
+.flexContainer{
+    border:3px solid blue;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+  
+}
+.flexContainer > div{
+    width: 33%;
+    border:3px solid lightblue;
+    padding: 1%;
+    margin: 1%;
+}
+.flexContainer img{
+    display: block;
+    width:20%;
+    height:auto;
+    margin:0 auto;
+}
+
+
+/*FOOTER styling*/
 footer{
 
     border:3px solid red;
     display: flex;
-    align-items: row;
+    flex-direction: row;
+    
 }
 
 footer ul{
@@ -131,16 +155,12 @@ footer ul{
     display: flex;
     flex-direction:column;
 }
-footer h1{
-
-font-size: medium;
-
-}
 
 .contactForm {
     border:3px solid red;
-    display: block;
-    
+  
+     
+      
 }
 input[type=text], select, textarea {
     width: 20%;
@@ -148,7 +168,6 @@ input[type=text], select, textarea {
     border: none;
     border-bottom: 2px solid rgb(2, 52, 60);
     margin-top: 4px;
- 
 
   }
 
