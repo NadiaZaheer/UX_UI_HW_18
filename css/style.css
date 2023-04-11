@@ -110,41 +110,93 @@ h1 {
     border: 3px solid seagreen;
     display: grid;
     grid-template-rows:40vh 40vh 40vh;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "pro1 imgPro1"
-    "pro2 imgPro2"
-    "pro3 imgPro3";
+    "pro1 pro1 imgPro1 imgPro1 imgPro1"
+    "pro2 pro2 imgPro2 imgPro2 imgPro2"
+    "pro3 pro3 imgPro3 imgPro3 imgPro3";
           
 }
 
 .pro1{
     grid-area: pro1;
-    align-content: center;
+    position: relative;
+  
    
 }
 .pro2{
     grid-area: pro2;
+    position: relative;
 }
 .pro3{
     grid-area: pro3;
+    position: relative;
 }
 .imgPro1{
     grid-area: imgPro1;
     border: 2px solid pink;
-    margin-right: 2%;
+    margin-right: 20%;
+    background-image: url("../images/leaves.avif");
+    background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
 }
 .imgPro2{
     grid-area: imgPro2;
     border: 2px solid pink;
-    margin-right: 2%;
+    margin-right: 20%;
+    background-image: url("../images/3.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
 }
 .imgPro3{
     grid-area: imgPro3;
     border: 2px solid pink;
-    margin-right: 2%;
+    margin-right: 20%;
+    background-image: url("../images/1.jpg");
+    background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
 }
 
+.title1{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:50%;
+    left:70%;
+    width:80%;
+    height:80%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+}
+.title2{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:50%;
+    left:70%;
+    width:80%;
+    height:80%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+}
+
+.title3{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:50%;
+    left:70%;
+    width:80%;
+    height:80%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+}
 
 
 
