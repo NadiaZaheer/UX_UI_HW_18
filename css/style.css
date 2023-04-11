@@ -121,6 +121,7 @@ h1 {
 .pro1{
     grid-area: pro1;
     position: relative;
+    
   
    
 }
@@ -134,7 +135,7 @@ h1 {
 }
 .imgPro1{
     grid-area: imgPro1;
-    border: 2px solid pink;
+    
     margin-right: 20%;
     background-image: url("../images/leaves.avif");
     background-repeat: no-repeat;
@@ -143,7 +144,7 @@ h1 {
 }
 .imgPro2{
     grid-area: imgPro2;
-    border: 2px solid pink;
+   
     margin-right: 20%;
     background-image: url("../images/3.jpg");
    background-repeat: no-repeat;
@@ -152,7 +153,7 @@ h1 {
 }
 .imgPro3{
     grid-area: imgPro3;
-    border: 2px solid pink;
+    
     margin-right: 20%;
     background-image: url("../images/1.jpg");
     background-repeat: no-repeat;
@@ -171,6 +172,7 @@ h1 {
     transform:translate(-50%,-50%);
     border: 1px solid teal;
     z-index: 100;
+    text-align: center;margin: 0;
 }
 .title2{
 
@@ -183,6 +185,7 @@ h1 {
     transform:translate(-50%,-50%);
     border: 1px solid teal;
     z-index: 100;
+   text-align: center;
 }
 
 .title3{
@@ -196,6 +199,7 @@ h1 {
     transform:translate(-50%,-50%);
     border: 1px solid teal;
     z-index: 100;
+    text-align:center;
 }
 
 
@@ -256,3 +260,95 @@ input[type=text], select, textarea {
 
   }
 
+  /*Media Query starts here*/
+
+@media only screen and (max-width:600px){
+
+    .flexContainer{
+
+        display: flex;
+        flex-direction: column;
+    }
+        .flexContainer > div{
+            width:100%;
+
+        }
+        .flexContainer img{
+            display: block;
+            width:100%;
+            height:auto;
+            margin:0 auto;
+        }
+    .workGrid{
+        border: 3px solid seagreen;
+        display: grid;
+        grid-template-rows:40vh 20vh 40vh 20vh 40vh 20vh ;
+        grid-template-columns:1fr;
+        grid-template-areas: 
+        "imgPro1"
+        "pro1"    
+        "imgPro2"
+        "pro2"    
+        "imgPro3"    
+        "pro3" ;
+          
+}
+.imgPro1{
+    margin:2%;
+
+}
+.imgPro2{
+    margin:2%;
+}
+.imgPro3{
+    margin: 2%;
+}
+.title1{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:10%;
+        width:90%;
+    height:100%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+    text-align: center;
+    margin: 0;
+
+}
+.title2{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:10%;
+    left:50%;
+    width:90%;
+    height:100%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+    text-align: center;
+    margin: 0;
+
+}
+.title3{
+
+    background-color: rgba(255,255,255);
+    position: absolute;
+    top:10%;
+    left:50%;
+    width:90%;
+    height:100%;
+    transform:translate(-50%,-50%);
+    border: 1px solid teal;
+    z-index: 100;
+    text-align: center;
+    margin: 0;
+
+}
+
+
+
+}
