@@ -1,58 +1,51 @@
 /*Styling of Header Section*/
-/*/color palette -blue-green: #429CB6ff;
---cerulean: #036D85ff;
---midnight-green: #014553ff;
-*/
-nav {
-    
-    width: 73%;
-    padding: 1%;
-}
 
-ul {
-     width: 50%;
-    margin-left: auto;
-}
 .navigation{
 
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;/*Note: overflow:hidden is added to the  element to prevent li elements from going outside of the list.*/
-        background-color:whitesmoke;
-      
-}
-.logo {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;/*Note: overflow:hidden is added to the  element to prevent li elements from going outside of the list.*/
+    background-color:whitesmoke transparent 100%;
    
-       width: 23% ;
-    padding: 1%;
-   
-    }
+  }
 
-nav{
-
-    display:flex;
-}
 .inline-block {
-
-   
     display: inline-block; 
 
     vertical-align: top;
-    
-  
-      
+            
 }
 
-li {
-    display: inline;
-    padding: 8px;
-    font-family: Helvetica;
+
+.logo {
+ width: 23% ;
+ padding: 1%;
+ }
+
+nav {
+    
+    width: 73%;
+    padding:1%;
+    
+   
+    }
+
+nav ul {
+    width: 40%;
+    margin:auto;
     float:right;
     
-
 }
+
+
+nav li {
+    display: inline-block;
+    padding: 8px;
+    font-family: Helvetica;
+    
+    }
 
 .inline-block a{
 
@@ -76,14 +69,12 @@ li {
     height: 600px;
     padding: 25px;
     margin: 0px;
-    background-image: url("../images/9.jpg");
-   /* background-image: url("../images/leaves.avif");*/
+    background-image: url("../images/leaves.avif");
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+   
     
   }
 
@@ -245,12 +236,7 @@ footer ul{
     flex-direction:column;
 }
 
-.contactForm {
-    border:3px solid red;
-  
-     
-      
-}
+                            
 input[type=text], select, textarea {
     width: 20%;
     padding: 4px;
